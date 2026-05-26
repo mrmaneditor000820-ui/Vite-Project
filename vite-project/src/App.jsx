@@ -15,6 +15,7 @@ const App = () => {
       <div id='main2'>
         <h2>NAVBAR</h2>
       </div>
+      <div><h1>THEME CHANGER</h1></div>
 
     <div style={{
       backgroundColor:theme === "Dark" ? "black" : "white",
