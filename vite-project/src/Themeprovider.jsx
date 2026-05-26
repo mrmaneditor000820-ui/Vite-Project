@@ -1,5 +1,5 @@
 import React, { createContext } from 'react'
-const ThemeContext = createContext()
+export const ThemeContext = createContext()
 
 function Themeprovider() {
   const [theme, settheme] = useState("light")
