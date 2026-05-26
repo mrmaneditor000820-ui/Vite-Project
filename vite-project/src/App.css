@@ -7,7 +7,7 @@
   
 }
 #main2{
-  border: 2px solid blue;
+  border: 5px solid blue;
   padding: 25px ;
   margin: 5px 10px;
   border-radius: 50px;
@@ -24,9 +24,10 @@ button:hover{
   color: white;
   transition: 0.9s;
   transform: scale(1.2);
+
 }
 .footer{
-  border: 2px solid blue;
+  border: 5px solid blue;
   height: 50px;
   border-radius: 50px ;
   margin-top: 150px;

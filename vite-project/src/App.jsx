@@ -5,34 +5,37 @@ import "./App.css"
 
 const App = () => {
 
-  const {theme,toggleTheme} = useContext(ThemeContext)
-  console.log("theme=>", theme,toggleTheme);
-  
+  const { theme, toggleTheme } = useContext(ThemeContext)
+  console.log("theme=>", theme, toggleTheme);
+
 
   return (
-    <div id='main' style={{  backgroundColor:theme === "Dark" ? "black" : "white",
-      color: theme === "light" ? "black" : "white",}}>
+    <div id='main' style={{
+      backgroundColor: theme === "Dark" ? "black" : "white",
+      color: theme === "light" ? "black" : "white",
+    }}>
       <div id='main2'>
         <h2>NAVBAR</h2>
       </div>
       <div><h1>THEME CHANGER</h1></div>
 
-    <div style={{
-      backgroundColor:theme === "Dark" ? "black" : "white",
-      color: theme === "light" ? "black" : "white",
-      height:"300px",margin:"100px auto",padding:"0px",
-      border:"2px solid blue",borderRadius:"20px",
-      width:"700px",textAlign:"center"
+      <div style={{
+        backgroundColor: theme === "Dark" ? "black" : "white",
+        color: theme === "light" ? "black" : "white",
+        height: "300px", margin: "100px auto", padding: "0px",
+        border: "7px solid blue", borderRadius: "20px",
+        width: "700px", textAlign: "center"
 
-    }}>
-    <h1 style={{fontSize:"50px",fontFamily:""
+      }}>
+        <h1 style={{
+          fontSize: "50px",
 
-    }}>ABDUL ---------- REHMAN</h1>
-    <button onClick={toggleTheme}>{theme }MODE</button>
+        }}>ABDUL ---------- REHMAN</h1>
+        <button onClick={toggleTheme}>{theme}MODE</button>
+      </div>
+      <div className='footer'>FOOTER</div>
     </div>
-    <div className='footer'>FOOTER</div>
-    </div>
-  
+
   )
 }
 
