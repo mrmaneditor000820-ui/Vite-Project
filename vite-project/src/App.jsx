@@ -10,7 +10,8 @@ const App = () => {
   
 
   return (
-    <div id='main'>
+    <div id='main' style={{  backgroundColor:theme === "dark" ? "black" : "white",
+      color: theme === "light" ? "black" : "white",}}>
       <div id='main2'>
         <h2>NAVBAR</h2>
       </div>
@@ -28,6 +29,7 @@ const App = () => {
     }}>ABDUL ---------- REHMAN</h1>
     <button onClick={toggleTheme}>change theme{theme}</button>
     </div>
+    <div className='footer'>FOOTER</div>
     </div>
   
   )
